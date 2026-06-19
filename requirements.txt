@@ -1,0 +1,2 @@
+# 解密数据库每一页需要 AES-256-CBC，用 pycryptodome 提供
+pycryptodome>=3.18

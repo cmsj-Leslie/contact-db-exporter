@@ -1,0 +1,16 @@
+# ── 隐私：绝不要把任何人的密钥和聊天数据提交到 git ──
+key.txt
+*.db
+*.csv
+*.xlsx
+contact_dec*.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 编辑器
+.idea/
+.vscode/
