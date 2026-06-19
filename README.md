@@ -287,6 +287,12 @@ hmac_data = page1[16 : 4032]   （去掉头部 salt，保留到含 IV）
 
 ---
 
+## 致谢
+
+本项目的密钥提取与解密思路参考自 [ylytdeng/wechat-decrypt](https://github.com/ylytdeng/wechat-decrypt)，在其基础上重新组织为配置与代码分离、一次导出全量 + 精简两份 CSV 的版本。感谢原作者的研究与分享。
+
+---
+
 ## License
 
 本项目采用 MIT 许可证，详见 [LICENSE](LICENSE) 文件。
