@@ -96,6 +96,8 @@ python export_contacts.py
 (Get-Item (Get-Process Weixin | Sort WorkingSet64 -Desc | Select -First 1).Path).VersionInfo.FileVersion
 ```
 
+> **下载微信历史版本**：如果当前版本是 4.1.10+，需要回退到 4.1.9.x 才能用。可在 <https://wechat-pc.cn.uptodown.com/windows/versions> 下载微信 PC 版的历史安装包。回退后建议**关闭微信自动更新**，否则会再次升级到不可用的版本。
+
 ---
 
 ## 文件说明
@@ -256,7 +258,7 @@ hmac_data = page1[16 : 4032]   （去掉头部 salt，保留到含 IV）
 (Get-Item (Get-Process Weixin | Sort WorkingSet64 -Desc | Select -First 1).Path).VersionInfo.FileVersion
 ```
 
-若是 4.1.10.x，应急办法是**回退微信到 4.1.9.x**（实测回退后立即恢复可用）。彻底支持 4.1.10 需逆向其新密钥存储格式，工作量较大。
+若是 4.1.10.x，应急办法是**回退微信到 4.1.9.x**（实测回退后立即恢复可用）。历史版本安装包可从 <https://wechat-pc.cn.uptodown.com/windows/versions> 下载。彻底支持 4.1.10 需逆向其新密钥存储格式，工作量较大。
 
 ### 2. 误报：HMAC / header 校验不能放太松
 
